@@ -4,8 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        // Mensaje de ejemplo
-        Console.WriteLine("Este es el ejemplo de programación orientada a objetos en C#");
+        // Mensaje
+        Console.WriteLine("Programación orientada a objetos en C#");
 
         // Ejemplos de uso
         // Abstracción

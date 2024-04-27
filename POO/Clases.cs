@@ -6,7 +6,7 @@ abstract class Personaje
     public abstract void Atacar();
     public abstract void Defenderse();
 }
-
+//-------------------------------------------------------------------------------------------------------------------------
 // Herencia
 class NaveEspacial
 {
@@ -18,10 +18,9 @@ class CazaEstelar : NaveEspacial
 {
     public void DesplegarEscudos()
     {
-        // No hay Console.WriteLine aquí en la clase CazaEstelar
     }
 }
-
+//-------------------------------------------------------------------------------------------------------------------------
 // Polimorfismo
 interface IFuerza
 {
@@ -45,7 +44,7 @@ class Sith : Personaje, IFuerza
 
     public void UsarFuerza() { }
 }
-
+//-------------------------------------------------------------------------------------------------------------------------
 // Encapsulación
 class Droide
 {
@@ -58,7 +57,7 @@ class Droide
         Funcionalidad = funcionalidad;
     }
 }
-
+//-------------------------------------------------------------------------------------------------------------------------
 // Interfaces
 interface IFaccion
 {
@@ -80,10 +79,10 @@ class Imperio : IFaccion
         return "El Imperio Galáctico";
     }
 }
-
+//-------------------------------------------------------------------------------------------------------------------------
 // Delegados
 delegate void DelegadoLider(Personaje lider);
-
+//-------------------------------------------------------------------------------------------------------------------------
 // Eventos
 class BatallaEventArgs : EventArgs
 {
@@ -105,7 +104,7 @@ class Batalla
         InicioBatalla?.Invoke(this, e);
     }
 }
-
+//-------------------------------------------------------------------------------------------------------------------------
 // Indexadores
 class Galaxia
 {
@@ -117,7 +116,7 @@ class Galaxia
         set { planetas[i] = value; }
     }
 }
-
+//-------------------------------------------------------------------------------------------------------------------------
 // Propiedades
 class Arma
 {
